@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLCP", "NLCP\NLCP.csproj", "{305D3B6D-1CFC-4CAE-9148-CE0B44357EBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{305D3B6D-1CFC-4CAE-9148-CE0B44357EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305D3B6D-1CFC-4CAE-9148-CE0B44357EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305D3B6D-1CFC-4CAE-9148-CE0B44357EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305D3B6D-1CFC-4CAE-9148-CE0B44357EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95E3B750-5569-4592-BE7A-B58C89F24B01}
+	EndGlobalSection
+EndGlobal
