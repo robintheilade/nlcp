@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using NLCP.Interfaces;
 using NLCP.Services;
 
@@ -16,6 +17,7 @@ namespace NLCP.Components
 
             Game.Components.Add(clearScreenComponent);
 
+            Game.Services.AddService(new SpriteBatchService(new SpriteBatch(Game.GraphicsDevice)));
             Game.Services.AddService<ISpritesService>(new SpritesService());
         }
     }
