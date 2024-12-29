@@ -9,8 +9,6 @@ new GraphicsDeviceManager(game);
 game.Content.RootDirectory = "Content";
 game.IsMouseVisible = true;
 
-var clearScreenComponent = new ClearScreenComponent(game);
-
-game.Components.Add(clearScreenComponent);
+game.Components.Add(new StartupComponent(game));
 
 game.Run();
