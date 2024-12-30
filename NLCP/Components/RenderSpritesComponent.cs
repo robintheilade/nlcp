@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using NLCP.Interfaces;
 using NLCP.Services;
 
@@ -19,10 +20,23 @@ namespace NLCP.Components
 
         public override void Draw(GameTime gameTime)
         {
+            var spriteBatch = this._spriteBatchService.SpriteBatch;
+            spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             foreach (var sprite in _spriteService.GetSprites())
             {
-                //TODO: Draw Sprites
+                spriteBatch.Draw(
+                    sprite.Texture,
+                    sprite.Position,
+                    sprite.SourceRectangle,
+                    sprite.Color,
+                    sprite.Rotation,
+                    sprite.Origin,
+                    sprite.Scale,
+                    sprite.Effects,
+                    sprite.LayerDepth
+                    );
             }
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

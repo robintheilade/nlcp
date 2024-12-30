@@ -6,7 +6,7 @@ namespace NLCP.Services
 {
     public class SpritesService : ISpritesService
     {
-        private readonly List<Sprite> _sprites;
+        private readonly List<Sprite> _sprites = new List<Sprite>();
 
         public IEnumerable<Sprite> GetSprites() => _sprites;
 
