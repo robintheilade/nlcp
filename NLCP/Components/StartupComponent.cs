@@ -15,10 +15,12 @@ namespace NLCP.Components
         {
             var clearScreenComponent = new ClearScreenComponent(Game);
 
-            Game.Components.Add(clearScreenComponent);
-
-            Game.Services.AddService(new SpriteBatchService(new SpriteBatch(Game.GraphicsDevice)));
+            Game.Services.AddService(new SpriteBatchService(new SpriteBatch(Game.GraphicsDevice))); // this must be before the components, as the components might try to get an instance of spritebatch
             Game.Services.AddService<ISpritesService>(new SpritesService());
+
+            Game.Components.Add(clearScreenComponent);
+            this.Game.Components.Add(new PersonComponent(this.Game));
+            this.Game.Components.Add(new RenderSpritesComponent(this.Game));
         }
     }
 }
